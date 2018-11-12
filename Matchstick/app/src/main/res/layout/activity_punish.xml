@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bglast"
+    tools:context=".punish">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+    <android.support.v7.widget.CardView
+        android:outlineSpotShadowColor="@color/green"
+        android:outlineAmbientShadowColor="@color/green"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:id="@+id/players"
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:layout_margin="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/cerclepink"
+                android:src="@drawable/winner"
+                android:padding="10dp"/>
+            <TextView
+                android:id="@+id/punishtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:layout_marginTop="10dp"
+                android:text=""/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/green"
+                android:layout_margin="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="You Have To Do It "
+                android:padding="5dp"
+                android:textSize="20dp"
+                android:textColor="@android:color/darker_gray"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+        <Button
+            android:id="@+id/fini"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Nice"
+            android:background="@drawable/round"
+          />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
